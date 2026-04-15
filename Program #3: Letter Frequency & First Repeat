@@ -1,1 +1,49 @@
+// Constantine Nikolov
 
+var readline = require("readline-sync");
+
+var input = readline.question("Enter a string: ");
+
+var counts = [];
+for (var i = 0; i < 26; i++) {
+    counts[i] = 0;
+}
+
+for (var i = 0; i < input.length; i++) {
+    var userInput = input[i];
+
+    // Check if it's a letter a-z
+    if (userInput >= 'a' && userInput <= 'z') {
+        var index = c.charCodeAt(0) - 97;
+        counts[index] = counts[index] + 1;
+    }
+}
+
+var firstRepeat = "";
+var foundnum = false;
+
+var repeatNums = [];
+for (var i = 0; i < 26; i++) {
+    repeatNums[i] = 0;
+}
+
+for (var i = 0; i < input.length; i++) {
+    var userInput2 = input[i];
+
+    if (userInput2 >= 'a' && userInput2 <= 'z') {
+        var index = ch.charCodeAt(0) - 97;
+
+        index = index + 1;
+
+        if (index > 1 && found === false) {
+            firstRepeat = userInput2;
+            foundnum = true;
+        }
+    }
+}
+
+if (foundnum) {
+    console.log("First repeated letter: " + firstRepeat);
+} else {
+    console.log("No repeated letters found.");
+}
