@@ -14,7 +14,7 @@ for (var i = 0; i < input.length; i++) {
 
     // Check if it's a letter a-z
     if (userInput >= 'a' && userInput <= 'z') {
-        var index = index[userInput];
+        var index = input[userInput];
         counts[index] = counts[index] + 1;
     }
 }
@@ -31,7 +31,7 @@ for (var i = 0; i < input.length; i++) {
     var userInput2 = input[i];
 
     if (userInput2 >= 'a' && userInput2 <= 'z') {
-        var index = ch.charCodeAt(0) - 97;
+        var index = input[userInput2];
 
         index = index + 1;
 
