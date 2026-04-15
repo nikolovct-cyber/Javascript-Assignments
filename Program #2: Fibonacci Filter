@@ -1,2 +1,35 @@
+// Constantine Nikolov
+
 var readline = require("readline-sync");
 
+var fibNums = readline.question("Prompt the user for the number of Fibonacci numbers to generate: "));
+
+if (fibNums <= 0) {
+    console.log("Invalid input.");
+} else {
+
+    var fibList = [];
+
+    for (var i = 0; i < n; i++) {
+        if (i === 0) {
+            fibList[i] = 0;
+        } else if (i === 1) {
+            fibList[i] = 1;
+        } else {
+            fibList[i] = fibList[i - 1] + fibList[i - 2];
+        }
+    }
+
+    console.log("Full sequence: " + fibList);
+
+    var oddFibList = [];
+    var index = 0;
+
+    for (var i = 0; i < fibList.length; i++) {
+        if (fib[i] % 2 !== 0) {
+            oddFibList[index] = fib[i];
+            index = index + 1;
+        }
+    }
+}
+    console.log("Odd Fibonacci numbers: " + oddFibList);
