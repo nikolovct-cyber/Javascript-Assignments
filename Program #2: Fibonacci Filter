@@ -32,4 +32,4 @@ if (fibNums <= 0) {
         }
     }
 }
-    console.log("Odd Fibonacci numbers: " + oddFibList);
+    console.log("Fibonacci nums that are odd: " + oddFibList);
