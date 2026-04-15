@@ -1,2 +1,45 @@
-let n = parseInt("Enter a number <= 1000: "));
-if (n <=
+//Constantine Nikolov
+
+var readline = require("readline-sync");
+
+var n = readline.question("Enter a positive number (<= 1000): ");
+
+if (n <= 0 || n > 1000) {
+    console.log("Invalid input.");
+} else {
+
+    var primeNums = [];
+
+    // Find primes up to n
+    for (var i = 2; i <= n; i++) {
+        var isPrime = true;
+
+        for (var j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrime = false;
+            }
+        }
+    }
+
+    let largestGap = 0;
+    let start = 0;
+    let end = 0;
+    let totalGap = 0;
+
+    for (var i = 0; i < primes.length - 1; i++) {
+        let gap = primeNums[i + 1] - primeNums[i];
+
+        totalGap += gap;
+
+        if (gap > largestGap) {
+            largestGap = gap;
+            start = primeNums[i];
+            end = primeNums[i + 1];
+        }
+    }
+}
+
+    var averageGap = totalGap / (primeNums.length - 1);
+
+    console.log("The largest gap is " + largestGap + ", between " + start + " and " + end);
+    console.log("The average gap is " + averageGap;
