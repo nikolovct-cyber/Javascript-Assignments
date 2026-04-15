@@ -20,7 +20,7 @@ if (fibNums <= 0) {
         }
     }
 
-    console.log("Full sequence: " + fibList);
+    console.log("Full fibonacci sequence: " + fibList);
 
     var oddFibList = [];
     var index = 0;
