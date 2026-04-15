@@ -1,1 +1,2 @@
-
+let n = parseInt("Enter a number <= 1000: "));
+if (n <=
